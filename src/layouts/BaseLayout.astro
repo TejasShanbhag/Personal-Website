@@ -1,0 +1,31 @@
+---
+const { title = "Tejas Shanbhag" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/">Home</a> |
+        <a href="/projects">Projects</a> |
+        <a href="/about">About</a> |
+        <a href="/Tejas_Shanbhag_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <hr />
+      <small>© {new Date().getFullYear()} Tejas Shanbhag</small>
+    </footer>
+  </body>
+</html>
